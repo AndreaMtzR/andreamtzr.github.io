@@ -10,6 +10,9 @@
     <!-- Titulo -->
     <title>Andrea Mtz | Desarrollo Web</title>
     <!-- Favicon -->
+    <!-- Agrega esto en el head de tu HTML para incluir Bootstrap Icons a través de CDN -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
     <link rel="icon" type="image/x-icon" href="imagenes/icono.png">
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
@@ -23,8 +26,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Rubik+Dirt&family=Share+Tech+Mono&display=swap" rel="stylesheet">
   </head>
   <body>
-    <!-- Barra de navegacion -->
-    <nav class="navbar navbar-expand-md navbar-light">
+    <nav class="navbar navbar-expand-md navbar-light" style="background-color: #883289;"> <!-- Cambia el color según tus preferencias -->
       <div class="container-fluid">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"> hola soy una futura ingeniera en sistemas</span>
@@ -50,6 +52,7 @@
         </div>
       </div>
     </nav>
+    
 
     <!-- Seccion Hero -->
     <section class="hero align-items-stretch">
@@ -62,7 +65,7 @@
         <h2 class="text-primary mb-4" id="typewriter"></h2>
       </div>
       <div class="hero-inferior">
-        <img class="hero-inferior-imagen img-fluid" src="imagenes/hero-inferior.svg" alt="Monitor, laptop y logos de HTML, CSS, JavaScript y React.">
+        <img class="hero-inferior-imagen img-fluid" src="imagenes/logo1.jpeg" alt="Mujer.">
       </div>
     </section>
 
@@ -70,7 +73,8 @@
     <section id="sobre-mi" class="sobre-mi seccion-oscura">
       <div class="contenedor">
         <h2 class="seccion-titulo">Conoce a Andrea </h2>
-        <p class="seccion-texto"> Estudio Ingenieria en sistemas computacioneles, Me gustan mucho las redes e intercomunicaciones</p>
+        <p class="seccion-texto"> ¡Bienvenido/a! Soy estudiante de Ingeniería en Sistemas Computacionales apasionada por la tecnología y el desarrollo web. Mi fascinación se centra en las redes e intercomunicaciones, y actualmente estoy explorando el emocionante mundo de la creación de páginas web.
+          Me encanta sumergirme en el universo de las herramientas tecnológicas, especialmente aquellas relacionadas con el desarrollo web. Desde las bases sólidas de HTML hasta la creación dinámica con PHP y JavaScript, y la gestión de datos con MySQL, cada elemento de mi aprendizaje contribuye a mi visión integral como desarrolladora, en pleno crecimiento...</p>
       </div>
     </section>
 
@@ -79,42 +83,45 @@
       <div class="container text-center">
         <div class="row">
           <!-- Desarrollo Web -->
-          <div class="columna col-12 col-md-4">
-            <i class="bi bi-laptop"></i>
-            <p class="experiencia-titulo">Desarrollo Web</p>
-            <p>
-                <li>Diseño y Planificación</li>
-                <li>Front-end (Desarrollo del Cliente)</li>
-                <li>Back-end (Desarrollo del Servidor)</li>
-                <li>Desarrollo Full-stack</li>
-            </p>
-            <div class="badges-contenedor">
-              <span class="badge text-bg-primary">HTML</span>
-              <span class="badge text-bg-primary">CSS</span>
-              <span class="badge text-bg-primary">JavaScript</span>
-              <span class="badge text-bg-primary">React</span>
-            </div>
-          </div>
+<div class="columna col-12 col-md-4">
+  <i class="bi bi-laptop"></i>
+  <p class="experiencia-titulo">Desarrollo Web</p>
+  <p class="experiencia-descripcion">
+    Soy apasionada por el desarrollo web, constante, aprendiendo desde el diseño y la planificación hasta la implementación tanto del Front-end como del Back-end.
+  </p>
+  <div class="habilidades-contenedor">
+    <p class="experiencia-subtitulo">Habilidades clave:</p>
+    <ul class="habilidades-lista">
+      <span class="badge text-bg-primary">HTML</span>
+     <span class="badge text-bg-primary">CSS</span>
+      <span class="badge text-bg-primary">PHP</span>
+      <span class="badge text-bg-primary">JavaScript</span>
+    </ul>
+  </div>
+</div>
+
           <!-- Articulos -->
           <div class="columna col-12 col-md-4">
-            <i class="bi bi-laptop"></i>
-            <p class="experiencia-titulo">Artículos</p>
-            <p>Articulos... pendiente para hoy </p>
+            <i class="bi bi-list"></i>
+            <p class="experiencia-titulo">Interes y pasiones</p>
+            <p>Como entusiasta de la tecnología y amante del arte, encuentro mi mayor inspiración en la fusión de ambos mundos. Mi pasión radica en explorar cómo la creatividad puede potenciarse mediante las herramientas tecnológicas, y viceversa. </p>
             <div class="badges-contenedor">
               <span class="badge text-bg-primary">Escribir</span>
               <span class="badge text-bg-primary">Editar</span>
-              <span class="badge text-bg-primary">Blogs</span>
+              <span class="badge text-bg-primary">Innovar</span>
             </div>
           </div>
           <!-- Estudiante -->
           <div class="columna col-12 col-md-4">
-            <i class="bi bi-laptop"></i>
-            <p class="experiencia-titulo">Estudiante</p>
-            <p>Actualmente se estudiante de Sistemas en el tecnologico de san juan del rio </p>
-            <div class="badges-contenedor">
+            <i class="bi bi-mortarboard"></i>
+            <p class="experiencia-titulo">Estudiante de Ingeniería en Sistemas Computacionales</p>
+            <p>Actualmente cursando el 7mo semestre en el TECNM campus San Juan del Río.</p>
+            <p>Me especializo en:</p>
+            <div class="habilidades">
               <span class="badge text-bg-primary">Tecnolochicas PRO</span>
               <span class="badge text-bg-primary">Desarrollo Web</span>
-              <span class="badge text-bg-primary">Python</span>
+              <span class="badge text-bg-primary">Programación</span>
+              <span class="badge text-bg-primary">Redes de Intercomunicación</span>
             </div>
           </div>
         </div>
@@ -131,11 +138,11 @@
           <!-- Proyecto 1 -->
           <div class="col-12 col-md-6 col-lg-4">
             <div class="proyecto">
-              <img src="imagenes/proyecto1.png" alt="Proyecto 1">
+              <img src="imagenes/cap1.png" alt="Proyecto 1">
               <div class="overlay">
-                <p>Proyecto 1</p>
+                <p>Publicidad para negocion en emprendimiento...</p>
                 <div class="iconos-contenedor">
-                  <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                  <a href="https://github.com/AndreaMtzR/guero" target="_blank" rel="noopener noreferrer">
                     <i class="bi bi-github"></i>
                   </a>
                   <a href="#" target="_blank" rel="noopener noreferrer">
@@ -148,9 +155,9 @@
           <!-- Proyecto 2 -->
           <div class="col-12 col-md-6 col-lg-4">
             <div class="proyecto">
-              <img src="imagenes/proyecto2.png" alt="Proyecto 1">
+              <img src="imagenes/cap2.png" alt="Proyecto 2">
               <div class="overlay">
-                <p>Proyecto 2</p>
+                <p>Sitio de peliculas conectada a BD. En proceso...</p>
                 <div class="iconos-contenedor">
                   <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
                     <i class="bi bi-github"></i>
@@ -165,14 +172,14 @@
           <!-- Proyecto 3 -->
           <div class="col-12 col-md-6 col-lg-4">
             <div class="proyecto">
-              <img src="imagenes/proyecto3.png" alt="Proyecto 1">
+              <img src="imagenes/cap3.png" alt="Proyecto 3">
               <div class="overlay">
-                <p>Proyecto 3</p>
+                <p>Clonación de Google</p>
                 <div class="iconos-contenedor">
-                  <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                  <a href="https://github.com/AndreaMtzR/clonagoogle" target="_blank" rel="noopener noreferrer">
                     <i class="bi bi-github"></i>
                   </a>
-                  <a href="#/" target="_blank" rel="noopener noreferrer">
+                  <a href="https://clonagoogle.vercel.app/" target="_blank" rel="noopener noreferrer">
                     <i class="bi bi-laptop"></i>
                   </a>
                 </div>
@@ -182,48 +189,14 @@
           <!-- Proyecto 4 -->
           <div class="col-12 col-md-6 col-lg-4">
             <div class="proyecto">
-              <img src="imagenes/proyecto4.png" alt="Proyecto 1">
+              <img src="imagenes/ca1.png" alt="Proyecto 4">
               <div class="overlay">
-                <p>Proyecto 4</p>
+                <p>Reloj Digital TCP</p>
                 <div class="iconos-contenedor">
-                  <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                  <a href="https://github.com/AndreaMtzR/Reloj-Digital" target="_blank" rel="noopener noreferrer">
                     <i class="bi bi-github"></i>
                   </a>
-                  <a href="#" target="_blank" rel="noopener noreferrer">
-                    <i class="bi bi-laptop"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Proyecto 5 -->
-          <div class="col-12 col-md-6 col-lg-4">
-            <div class="proyecto">
-              <img src="imagenes/proyecto5.png" alt="Proyecto 1">
-              <div class="overlay">
-                <p>Proyecto 5</p>
-                <div class="iconos-contenedor">
-                  <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
-                    <i class="bi bi-github"></i>
-                  </a>
-                  <a href="#" target="_blank" rel="noopener noreferrer">
-                    <i class="bi bi-laptop"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Proyecto 6 -->
-          <div class="col-12 col-md-6 col-lg-4">
-            <div class="proyecto">
-              <img src="imagenes/proyecto6.png" alt="Proyecto 1">
-              <div class="overlay">
-                <p>Proyecto 6</p>
-                <div class="iconos-contenedor">
-                  <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
-                    <i class="bi bi-github"></i>
-                  </a>
-                  <a href="#" target="_blank" rel="noopener noreferrer">
+                  <a href="https://reloj-digital-zeta.vercel.app/" target="_blank" rel="noopener noreferrer">
                     <i class="bi bi-laptop"></i>
                   </a>
                 </div>
@@ -231,13 +204,6 @@
             </div>
           </div>
         </div>
-      </div>
-      <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
-        <button type="button" class="btn btn-info">
-          Ver más proyectos
-          <i class="bi bi-arrow-right-circle-fill"></i>
-        </button>
-      </a>
     </section>
 
     <!-- Testimonios -->
@@ -250,34 +216,26 @@
         <div class="carousel-inner">
           <div class="carousel-item active">
             <div class="container">
-              <img class="testimonio-imagen rounded-circle" src="imagenes/cliente1.svg" alt="Foto de Gino">
-              <p class="testimonio-texto">.</p>
+              <img class="testimonio-imagen rounded-circle" src="imagenes/cliente1.png" alt="Foto de anel">
+              <p class="testimonio-texto">Andrea muestra un rápido progreso en la adquisición de habilidades técnicas clave y una gran disposición para colaborar en proyectos. Su actitud positiva y su voluntad de aprender constantemente son cualidades valiosas en el campo de la programación. No tengo dudas de que Andrea seguirá creciendo y haciendo contribuciones significativas como desarrolladora frontend en el futuro.</p>
               <div class="testimonio-info">
-                <p class="cliente">Gino</p>
-                <p class="cargo">Gerente de proyectos en DesarrolloWeb</p>
+                <p class="cliente">Anel Montes</p>
+                <p class="cargo">Mentora de Tecnolochicas Pro</p>
               </div>
             </div>
           </div>
           <div class="carousel-item">
             <div class="container">
-              <img class="testimonio-imagen rounded-circle" src="imagenes/cliente2.svg" alt="Foto de Nora">
-              <p class="testimonio-texto">.</p>
+              <img class="testimonio-imagen rounded-circle" src="imagenes/cliente2.png" alt="Foto de Elizabeth">
+              <p class="testimonio-texto">Andrea continúa demostrando un impresionante avance en el desarrollo de habilidades técnicas clave y una notable disposición para colaborar en proyectos. Su actitud positiva y su firme voluntad de aprender de manera continua destacan como atributos valiosos en el dinámico campo sin dejar de lado su entusiasmo por seguir aprendiendo.</p>
               <div class="testimonio-info">
-                <p class="cliente">Nora</p>
-                <p class="cargo">Gerente de Diseña Mi Página Web</p>
+                <p class="cliente">Elizabeth</p>
+                <p class="cargo">Ing. Gestion de Empresarial</p>
               </div>
             </div>
           </div>
-          <div class="carousel-item">
-            <div class="container">
-              <img class="testimonio-imagen rounded-circle" src="imagenes/cliente3.svg" alt="Foto de Leonardo">
-              <p class="testimonio-texto">.</p>
-              <div class="testimonio-info">
-                <p class="cliente">Leonardo</p>
-                <p class="cargo">Director </p>
-              </div>
-            </div>
-          </div>
+        
+           
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#testimonios-carrusel" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>

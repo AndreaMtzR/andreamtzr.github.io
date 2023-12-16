@@ -1,9 +1,13 @@
 /* Barra de navegacion */
 
 .navbar {
+  padding: 1rem;
+  background-color: #b369b3; /* Cambia el color según tus preferencias */
+}
+/*.navbar {
   padding: 2rem;
   background-color: #f5f6f7;
-}
+}*/
 
 .navbar-collapse {
   align-items: center;
